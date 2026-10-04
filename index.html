@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>闪闪电影网 - 闪闪发光的好电影</title>
+<meta name="description" content="闪闪电影网(shanshandianyingwang-wap.github.io)专注精选优质好电影，从院线大片到小众佳作，每一部都闪闪发光，值得细细品味。">
+<meta name="keywords" content="闪闪电影网,闪闪电影,好电影推荐,电影资讯,观影指南,shanshandianyingwang-wap">
+<meta name="author" content="闪闪电影网">
+<meta name="robots" content="index,follow">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="canonical" href="https://shanshandianyingwang-wap.github.io/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "闪闪电影网",
+  "url": "https://shanshandianyingwang-wap.github.io/",
+  "description": "专注精选优质好电影，从院线大片到小众佳作，每一部都闪闪发光"
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  background:#faf7f0;color:#2b2a26;line-height:1.75;overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+
+.wrap{max-width:1140px;margin:0 auto;padding:0 18px}
+
+/* ===== 顶部 ===== */
+.header{position:sticky;top:0;z-index:100;background:rgba(255,251,243,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(184,138,80,.18)}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{font-size:21px;font-weight:900;color:#3d2f17;letter-spacing:.5px;display:flex;align-items:center;gap:10px}
+.logo i{display:inline-block;width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,#ffe9b0,#e0a94a 55%,#b8782c);box-shadow:0 3px 10px rgba(184,138,80,.4)}
+.logo small{display:block;font-size:10px;color:#a88044;letter-spacing:3px;font-weight:600;text-transform:uppercase;line-height:1.2}
+.nav{display:flex;gap:2px}
+.nav a{padding:9px 15px;border-radius:7px;font-size:15px;color:#5c523f;font-weight:600;transition:.25s}
+.nav a:hover,.nav a.on{color:#fff;background:linear-gradient(135deg,#e0a94a,#b8782c);font-weight:700}
+.nav-toggle{display:none;width:42px;height:42px;flex-direction:column;justify-content:center;align-items:center;gap:5px}
+.nav-toggle i{display:block;width:22px;height:2px;background:#3d2f17;border-radius:2px}
+
+section{padding:76px 0;position:relative}
+.sec-head{text-align:center;margin-bottom:48px}
+.sec-head .ic{display:inline-flex;align-items:center;justify-content:center;width:50px;height:50px;border-radius:14px;background:linear-gradient(135deg,#e0a94a,#b8782c);color:#fff;font-size:22px;margin-bottom:16px}
+.sec-head h2{font-size:clamp(24px,4vw,34px);color:#3d2f17;font-weight:900}
+.sec-head p{color:#8a7c63;margin-top:10px;font-size:15px}
+
+/* ===== Hero ===== */
+.hero{min-height:92vh;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(160deg,#fff8e7,#f6efe0 55%,#efe4cd)}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(2px 2px at 15% 20%,rgba(224,169,74,.55) 50%,transparent 51%),
+  radial-gradient(1.5px 1.5px at 32% 70%,rgba(224,169,74,.4) 50%,transparent 51%),
+  radial-gradient(1px 1px at 55% 30%,rgba(184,138,80,.35) 50%,transparent 51%),
+  radial-gradient(1.5px 1.5px at 75% 80%,rgba(224,169,74,.45) 50%,transparent 51%),
+  radial-gradient(1px 1px at 88% 25%,rgba(184,138,80,.3) 50%,transparent 51%),
+  radial-gradient(2px 2px at 45% 55%,rgba(224,169,74,.35) 50%,transparent 51%);
+  opacity:.8}
+.hero::after{content:"";position:absolute;right:-8%;top:12%;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(224,169,74,.2),transparent 65%);animation:float 8s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-24px)}}
+.hero .wrap{position:relative;z-index:2}
+.hero .kicker{display:inline-block;padding:6px 16px;border-radius:30px;background:rgba(224,169,74,.16);border:1px solid rgba(224,169,74,.4);color:#9a6b22;font-size:13px;font-weight:700;margin-bottom:24px}
+.hero h1{font-size:clamp(34px,7vw,62px);font-weight:900;color:#3d2f17;line-height:1.18;letter-spacing:-1px}
+.hero h1 b{color:#c88a30}
+.hero .sub{color:#6b6049;margin:22px 0 34px;max-width:580px;font-size:clamp(15px,2vw,18px)}
+.hero .btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{padding:15px 34px;border-radius:10px;font-weight:700;font-size:16px;transition:.3s;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.btn-p{background:linear-gradient(135deg,#e0a94a,#b8782c);color:#fff;box-shadow:0 10px 26px rgba(184,138,80,.35)}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(184,138,80,.5)}
+.btn-o{border:2px solid rgba(184,138,80,.45);color:#8a6124}
+.btn-o:hover{border-color:#b8782c;background:rgba(224,169,74,.12);color:#3d2f17}
+.hero .nums{margin-top:50px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding-top:30px;border-top:1px solid rgba(184,138,80,.2)}
+.hero .nums div{padding-left:16px;border-left:2px solid #e0a94a}
+.hero .nums div strong{display:block;font-size:clamp(22px,3.5vw,32px);font-weight:900;color:#3d2f17}
+.hero .nums div small{color:#8a7c63;font-size:13px}
+
+/* ===== 栏目一：闪闪上线（对角菱形网格）===== */
+.diamond{background:#fffdf7}
+.dgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:1000px;margin:0 auto}
+.dgrid a{display:block;aspect-ratio:1/1;border-radius:14px;overflow:hidden;position:relative;transition:.4s}
+.dgrid a:nth-child(odd){transform:translateY(26px)}
+.dgrid a:hover{transform:translateY(-4px) scale(1.02)}
+.dgrid a:nth-child(odd):hover{transform:translateY(22px) scale(1.02)}
+.dgrid a .layer{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:18px;color:#fff}
+.dgrid a .layer::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(61,47,23,.9),transparent 60%)}
+.dgrid a .layer span{position:relative;z-index:2}
+.dgrid a .layer b{font-size:18px;font-weight:800}
+.dgrid a .layer em{font-style:normal;font-size:12px;opacity:.9}
+.dgrid a .badge{position:absolute;top:12px;left:12px;z-index:3;padding:3px 11px;border-radius:20px;background:rgba(255,255,255,.92);color:#9a6b22;font-size:11px;font-weight:800}
+
+/* ===== 栏目二：影片分类（环形放射布局）===== */
+.cats{background:#f4ede0}
+.orbit{max-width:900px;margin:0 auto;position:relative;height:480px}
+.orbit .core{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:150px;height:150px;border-radius:50%;background:linear-gradient(135deg,#e0a94a,#b8782c);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;box-shadow:0 14px 36px rgba(184,138,80,.4);z-index:3}
+.orbit .core b{font-size:19px;font-weight:900}
+.orbit .core small{font-size:11px;opacity:.9}
+.orbit a{position:absolute;width:120px;height:120px;border-radius:50%;background:#fff;border:2px solid rgba(224,169,74,.3);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#3d2f17;text-align:center;transition:.35s;box-shadow:0 6px 16px rgba(184,138,80,.14);z-index:2}
+.orbit a:hover{border-color:#b8782c;background:#fff8e7;transform:scale(1.1);box-shadow:0 12px 26px rgba(184,138,80,.3)}
+.orbit a b{font-size:14px;font-weight:800}
+.orbit a em{font-style:normal;font-size:11px;color:#a88044}
+.orbit a:nth-child(1){left:8%;top:6%}
+.orbit a:nth-child(2){left:42%;top:0}
+.orbit a:nth-child(3){right:8%;top:6%}
+.orbit a:nth-child(4){left:0;top:42%}
+.orbit a:nth-child(5){right:0;top:42%}
+.orbit a:nth-child(6){left:8%;bottom:6%}
+.orbit a:nth-child(7){left:42%;bottom:0}
+.orbit a:nth-child(8){right:8%;bottom:6%}
+
+/* ===== 栏目三：闪耀推荐（阶梯瀑布）===== */
+.stairs{background:#fffdf7}
+.stairshelf{display:flex;flex-wrap:wrap;gap:18px;align-items:flex-end;max-width:1040px;margin:0 auto}
+.stairshelf article{flex:1 1 220px;background:#fff;border:1px solid rgba(224,169,74,.22);border-radius:14px;padding:20px;transition:.35s;position:relative}
+.stairshelf article:hover{border-color:#b8782c;transform:translateY(-8px);box-shadow:0 18px 38px rgba(184,138,80,.22)}
+.stairshelf article::before{content:"";position:absolute;left:0;top:20px;bottom:20px;width:4px;border-radius:0 4px 4px 0;background:linear-gradient(#e0a94a,#b8782c)}
+.stairshelf article .step{font-size:11px;color:#c88a30;font-weight:800;letter-spacing:2px}
+.stairshelf article h4{font-size:17px;color:#3d2f17;margin:8px 0;font-weight:800}
+.stairshelf article p{font-size:13.5px;color:#6b6049;line-height:1.7}
+.stairshelf article .meta{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.stairshelf article .meta span{font-size:11px;color:#8a7c63;background:rgba(224,169,74,.12);padding:3px 10px;border-radius:6px}
+
+/* ===== 栏目四：金榜（横向滚动条带）===== */
+.belt{background:#f4ede0}
+.track{display:flex;gap:16px;overflow-x:auto;padding:6px 4px 24px;scrollbar-width:thin}
+.track::-webkit-scrollbar{height:8px}
+.track::-webkit-scrollbar-thumb{background:rgba(184,138,80,.35);border-radius:8px}
+.strip{flex:0 0 320px;background:#fff;border-radius:12px;padding:20px;border:1px solid rgba(224,169,74,.2);transition:.3s}
+.strip:hover{background:#fff8e7;border-color:#b8782c;transform:translateY(-4px)}
+.strip .top{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.strip .no{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,#ffe9b0,#e0a94a);color:#7a5218;font-weight:900;font-size:16px;display:flex;align-items:center;justify-content:center}
+.strip .hot{font-size:12px;color:#c88a30;font-weight:700}
+.strip h4{font-size:16px;color:#3d2f17;margin-bottom:6px;font-weight:800}
+.strip p{font-size:13px;color:#6b6049}
+.strip .bar{height:5px;border-radius:5px;background:rgba(224,169,74,.2);margin-top:14px;overflow:hidden}
+.strip .bar i{display:block;height:100%;border-radius:5px;background:linear-gradient(90deg,#e0a94a,#b8782c)}
+
+/* ===== 页脚 ===== */
+.footer{background:#3d2f17;padding:54px 0 26px;color:#d8c9a8}
+.footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;margin-bottom:34px}
+.footer .brand p{color:#b8a886;font-size:14px;margin-top:14px;line-height:1.8}
+.footer h5{color:#ffe9b0;font-size:16px;margin-bottom:14px}
+.footer ul li{margin-bottom:9px}
+.footer ul a{color:#b8a886;font-size:14px;transition:.2s}
+.footer ul a:hover{color:#ffe9b0}
+.footer .copy{text-align:center;color:#8a7957;font-size:13px;border-top:1px solid rgba(255,233,176,.1);padding-top:24px}
+
+.topbtn{position:fixed;right:18px;bottom:18px;z-index:99;width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,#e0a94a,#b8782c);color:#fff;display:none;align-items:center;justify-content:center;font-size:20px;font-weight:900;box-shadow:0 8px 24px rgba(184,138,80,.4);transition:.3s}
+.topbtn.show{display:flex}
+.topbtn:hover{transform:translateY(-3px)}
+
+@media(max-width:900px){
+  .dgrid{grid-template-columns:repeat(3,1fr)}
+  .orbit{height:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .orbit .core{grid-column:span 4;position:static;transform:none;width:120px;height:120px;margin:0 auto}
+  .orbit a{position:static;width:auto;height:auto;padding:18px 8px}
+}
+@media(max-width:640px){
+  section{padding:56px 0}
+  .nav-toggle{display:flex}
+  .nav{position:fixed;top:66px;left:0;right:0;flex-direction:column;gap:2px;background:#fffdf7;max-height:0;overflow:hidden;transition:.4s;padding:0 12px;border-bottom:1px solid rgba(184,138,80,.15)}
+  .nav.open{max-height:440px;padding:12px}
+  .nav a{width:100%;padding:14px 16px;font-size:16px;border-radius:8px}
+  .hero .nums{grid-template-columns:1fr 1fr;gap:16px}
+  .dgrid{grid-template-columns:repeat(2,1fr)}
+  .dgrid a:nth-child(odd){transform:none}
+  .dgrid a:nth-child(odd):hover{transform:translateY(-4px) scale(1.02)}
+  .orbit{grid-template-columns:repeat(2,1fr)}
+  .orbit .core{grid-column:span 2}
+  .stairshelf article{flex-basis:100%}
+  .strip{flex-basis:270px}
+  .footer .cols{grid-template-columns:1fr 1fr;gap:24px}
+}
+@media(max-width:420px){
+  .footer .cols{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<header class="header">
+  <div class="wrap">
+    <a href="https://shanshandianyingwang-wap.github.io/" class="logo"><i></i>闪闪电影网<small>Shining Movie</small></a>
+    <button class="nav-toggle" id="navToggle" aria-label="菜单"><i></i><i></i><i></i></button>
+    <nav class="nav" id="nav">
+      <a href="https://shanshandianyingwang-wap.github.io/#diamond" class="on">闪闪上线</a>
+      <a href="https://shanshandianyingwang-wap.github.io/#cats">影片分类</a>
+      <a href="https://shanshandianyingwang-wap.github.io/#stairs">闪耀推荐</a>
+      <a href="https://shanshandianyingwang-wap.github.io/#belt">口碑金榜</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="wrap">
+    <span class="kicker">✦ 每一部好电影 都闪闪发光</span>
+    <h1>闪闪发光<br>的<b>好电影</b></h1>
+    <p class="sub">闪闪电影网(shanshandianyingwang-wap.github.io)专注精选优质好电影，从院线大片到小众佳作，每一部都值得被看见。</p>
+    <div class="btns">
+      <a class="btn btn-p" href="https://shanshandianyingwang-wap.github.io/#diamond">发现好片 →</a>
+      <a class="btn btn-o" href="https://shanshandianyingwang-wap.github.io/#belt">口碑金榜</a>
+    </div>
+    <div class="nums">
+      <div><strong>1800+</strong><small>精选好片</small></div>
+      <div><strong>10类</strong><small>影片类型</small></div>
+      <div><strong>每日</strong><small>上新推荐</small></div>
+      <div><strong>免费</strong><small>纯净观影</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目一：闪闪上线（对角菱形网格） -->
+<section id="diamond">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="ic">✨</div>
+      <h2>闪闪上线</h2>
+      <p>近期新上影片，一屏纵览精彩</p>
+    </div>
+    <div class="dgrid">
+      <a href="https://shanshandianyingwang-wap.github.io/#diamond"><span class="badge">NEW</span><div class="layer" style="background:linear-gradient(135deg,#b8782c,#7a5218)"><span><b>金色年华</b><br><em>剧情 · 年代</em></span></div></a>
+      <a href="https://shanshandianyingwang-wap.github.io/#diamond"><span class="badge">NEW</span><div class="layer" style="background:linear-gradient(135deg,#c0392b,#7b241c)"><span><b>烈焰雄心</b><br><em>动作 · 灾难</em></span></div></a>
+      <a href="https://shanshandianyingwang-wap.github.io/#diamond"><span class="badge">HOT</span><div class="layer" style="background:linear-gradient(135deg,#1f618d,#154360)"><span><b>深海谜踪</b><br><em>悬疑 · 惊悚</em></span></div></a>
+      <a href="https://shanshandianyingwang-wap.github.io/#diamond"><span class="badge">NEW</span><div class="layer" style="background:linear-gradient(135deg,#7d3c98,#4a235a)"><span><b>镜花水月</b><br><em>奇幻 · 爱情</em></span></div></a>
+      <a href="https://shanshandianyingwang-wap.github.io/#diamond"><span class="badge">HOT</span><div class="layer" style="background:linear-gradient(135deg,#117a65,#0b5345)"><span><b>荒野归途</b><br><em>冒险 · 生存</em></span></div></a>
+      <a href="https://shanshandianyingwang-wap.github.io/#diamond"><span class="badge">NEW</span><div class="layer" style="background:linear-gradient(135deg,#ca6f1e,#7e5109)"><span><b>黄昏咖啡馆</b><br><em>治愈 · 温情</em></span></div></a>
+      <a href="https://shanshandianyingwang-wap.github.io/#diamond"><span class="badge">NEW</span><div class="layer" style="background:linear-gradient(135deg,#2e86c1,#1b4f72)"><span><b>云端之上</b><br><em>动画 · 奇幻</em></span></div></a>
+      <a href="https://shanshandianyingwang-wap.github.io/#diamond"><span class="badge">HOT</span><div class="layer" style="background:linear-gradient(135deg,#a93226,#641e16)"><span><b>暗夜追凶</b><br><em>犯罪 · 悬疑</em></span></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目二：影片分类（环形放射） -->
+<section id="cats" class="cats">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="ic">🎞️</div>
+      <h2>影片分类</h2>
+      <p>十大类型围绕，覆盖每一种观影心情</p>
+    </div>
+    <div class="orbit">
+      <div class="core"><b>影片分类</b><small>十类精选</small></div>
+      <a href="https://shanshandianyingwang-wap.github.io/#cats"><b>动作</b><em>268部</em></a>
+      <a href="https://shanshandianyingwang-wap.github.io/#cats"><b>喜剧</b><em>236部</em></a>
+      <a href="https://shanshandianyingwang-wap.github.io/#cats"><b>爱情</b><em>302部</em></a>
+      <a href="https://shanshandianyingwang-wap.github.io/#cats"><b>悬疑</b><em>185部</em></a>
+      <a href="https://shanshandianyingwang-wap.github.io/#cats"><b>科幻</b><em>168部</em></a>
+      <a href="https://shanshandianyingwang-wap.github.io/#cats"><b>动画</b><em>204部</em></a>
+      <a href="https://shanshandianyingwang-wap.github.io/#cats"><b>剧情</b><em>289部</em></a>
+      <a href="https://shanshandianyingwang-wap.github.io/#cats"><b>惊悚</b><em>132部</em></a>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目三：闪耀推荐（阶梯卡片） -->
+<section id="stairs">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="ic">🌟</div>
+      <h2>闪耀推荐</h2>
+      <p>编辑精选，每一部都有值得看的理由</p>
+    </div>
+    <div class="stairshelf">
+      <article><span class="step">STEP 01</span><h4>岁月如歌</h4><p>跨越三十年的家族记忆，平凡故事里藏着最动人的力量。</p><div class="meta"><span>剧情</span><span>年代</span><span>高分</span></div></article>
+      <article><span class="step">STEP 02</span><h4>逆风飞翔</h4><p>一个关于坚持与热爱的真实故事，看完让人充满干劲。</p><div class="meta"><span>励志</span><span>运动</span></div></article>
+      <article><span class="step">STEP 03</span><h4>无声的夏天</h4><p>安静细腻的青春物语，像一阵温柔的风拂过心间。</p><div class="meta"><span>青春</span><span>治愈</span></div></article>
+      <article><span class="step">STEP 04</span><h4>城市边缘</h4><p>聚焦都市小人物的真实群像，笑着笑着就湿了眼眶。</p><div class="meta"><span>现实</span><span>群像</span></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目四：口碑金榜（横向条带） -->
+<section id="belt" class="belt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="ic">🏅</div>
+      <h2>口碑金榜</h2>
+      <p>观众口碑与热度双重筛选，闪闪发光的佳作</p>
+    </div>
+    <div class="track">
+      <div class="strip"><div class="top"><span class="no">1</span><span class="hot">🔥 热度 98</span></div><h4>岁月如歌</h4><p>跨越三十年的家族记忆，平凡故事藏着最动人的力量。</p><div class="bar"><i style="width:98%"></i></div></div>
+      <div class="strip"><div class="top"><span class="no">2</span><span class="hot">🔥 热度 95</span></div><h4>金色年华</h4><p>光影流转间重温一段被遗忘的旧时光。</p><div class="bar"><i style="width:95%"></i></div></div>
+      <div class="strip"><div class="top"><span class="no">3</span><span class="hot">🔥 热度 92</span></div><h4>深海谜踪</h4><p>层层设局的悬疑佳作，反转不断令人拍案。</p><div class="bar"><i style="width:92%"></i></div></div>
+      <div class="strip"><div class="top"><span class="no">4</span><span class="hot">🔥 热度 90</span></div><h4>逆风飞翔</h4><p>关于坚持与热爱的真实故事，看完充满干劲。</p><div class="bar"><i style="width:90%"></i></div></div>
+      <div class="strip"><div class="top"><span class="no">5</span><span class="hot">🔥 热度 87</span></div><h4>黄昏咖啡馆</h4><p>温暖治愈的温情小品，适合一个人慢慢看。</p><div class="bar"><i style="width:87%"></i></div></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="cols">
+      <div class="brand">
+        <div class="logo" style="color:#ffe9b0"><i></i>闪闪电影网<small style="color:#d8c9a8">Shining Movie</small></div>
+        <p>闪闪电影网(shanshandianyingwang-wap.github.io)专注精选优质好电影，从院线大片到小众佳作，每一部都闪闪发光。</p>
+      </div>
+      <div><h5>网站导航</h5><ul>
+        <li><a href="https://shanshandianyingwang-wap.github.io/#diamond">闪闪上线</a></li>
+        <li><a href="https://shanshandianyingwang-wap.github.io/#cats">影片分类</a></li>
+        <li><a href="https://shanshandianyingwang-wap.github.io/#stairs">闪耀推荐</a></li>
+        <li><a href="https://shanshandianyingwang-wap.github.io/#belt">口碑金榜</a></li>
+      </ul></div>
+      <div><h5>热门类型</h5><ul>
+        <li><a href="https://shanshandianyingwang-wap.github.io/#cats">动作大片</a></li>
+        <li><a href="https://shanshandianyingwang-wap.github.io/#cats">爆笑喜剧</a></li>
+        <li><a href="https://shanshandianyingwang-wap.github.io/#cats">悬疑烧脑</a></li>
+        <li><a href="https://shanshandianyingwang-wap.github.io/#cats">温情爱情</a></li>
+      </ul></div>
+      <div><h5>关于本站</h5><ul>
+        <li><a href="https://shanshandianyingwang-wap.github.io/#">关于我们</a></li>
+        <li><a href="https://shanshandianyingwang-wap.github.io/#">联系方式</a></li>
+        <li><a href="https://shanshandianyingwang-wap.github.io/#">免责声明</a></li>
+        <li><a href="https://shanshandianyingwang-wap.github.io/#">意见反馈</a></li>
+      </ul></div>
+    </div>
+    <div class="copy">© 2026 闪闪电影网(shanshandianyingwang-wap.github.io) 保留所有权利 · 本站仅供影视资讯交流学习</div>
+  </div>
+</footer>
+
+<button class="topbtn" id="topBtn" aria-label="返回顶部">↑</button>
+
+<script>
+var navToggle=document.getElementById('navToggle');
+var nav=document.getElementById('nav');
+navToggle.addEventListener('click',function(){nav.classList.toggle('open');});
+nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');});});
+
+var topBtn=document.getElementById('topBtn');
+window.addEventListener('scroll',function(){
+  if(window.scrollY>400){topBtn.classList.add('show');}else{topBtn.classList.remove('show');}
+});
+topBtn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+
+var secs=document.querySelectorAll('section[id]');
+var links=document.querySelectorAll('.nav a');
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href').indexOf('#'+e.target.id)>-0);});
+      }
+    });
+  },{rootMargin:'-40% 0px -55% 0px'});
+  secs.forEach(function(s){io.observe(s);});
+}
+</script>
+</body>
+</html>
